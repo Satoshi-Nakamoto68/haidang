@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { MapPin, Mail, Clock, Building2, Globe, Send } from "lucide-react"
+import { MapPin, Mail, Clock, Building2, Globe, Send, CheckCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -23,11 +23,23 @@ export default function ContactPage() {
     service: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState<null | { ref: string }>(null)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Contact form submitted:", formData)
+    if (isSubmitting) return
+    setIsSubmitting(true)
+    setSubmitSuccess(null)
+
+    // Simulate async submission
+    setTimeout(() => {
+      const ref = `MSG-${Math.random().toString(36).slice(2, 7).toUpperCase()}`
+      console.log("Contact form submitted:", formData, ref)
+      setIsSubmitting(false)
+      setSubmitSuccess({ ref })
+      setFormData({ name: "", email: "", company: "", subject: "", service: "", message: "" })
+    }, 900)
   }
 
   return (
@@ -73,8 +85,9 @@ export default function ContactPage() {
                   <div className="text-muted-foreground space-y-2">
                     <div>
                       <p className="font-medium">General Inquiries</p>
-                      <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">
-                        info@haidangimex.com
+                      <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">
+                        {/* info@haidangimex.com */}
+                        xnkbaonhi@gmail.com
                       </a>
                     </div>
                     <div>
@@ -116,7 +129,20 @@ export default function ContactPage() {
                     </p>
                   </CardHeader>
                   <CardContent>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Inline Success Banner */}
+                    {submitSuccess && (
+                      <div className="mb-6 rounded-lg border border-green-600/30 bg-green-600/10 p-4">
+                        <div className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
+                          <div className="text-sm">
+                            <p className="font-medium text-green-700">Your message has been sent successfully</p>
+                            <p className="text-green-700/80">Reference: <span className="font-mono">{submitSuccess.ref}</span>. Our team will respond within 24 hours.</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    <form onSubmit={handleSubmit} className="space-y-6" aria-live="polite">
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name *</Label>
@@ -196,10 +222,11 @@ export default function ContactPage() {
 
                       <Button
                         type="submit"
-                        className="w-full bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-200"
+                        className="w-full bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-200 cursor-pointer disabled:cursor-not-allowed"
+                        disabled={isSubmitting}
                       >
                         <Send className="w-4 h-4 mr-2" />
-                        Send Message
+                        {isSubmitting ? "Sending..." : "Send Message"}
                       </Button>
                     </form>
                   </CardContent>
@@ -208,7 +235,7 @@ export default function ContactPage() {
 
               {/* Map and Additional Info */}
               <div className="space-y-6">
-                {/* Map Placeholder */}
+                {/* Google Maps Embed */}
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
@@ -217,21 +244,26 @@ export default function ContactPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4">
-                      <div className="text-center text-muted-foreground">
-                        <MapPin className="w-12 h-12 mx-auto mb-2" />
-                        <p className="font-medium">Interactive Map</p>
-                        <p className="text-sm">Wan Chai, Hong Kong</p>
-                      </div>
+                    <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-4">
+                      <iframe
+                        src="https://www.google.com/maps?q=8/F.,%20China%20Hong%20Kong%20Tower,%208-12%20Hennessy%20Road,%20Wan%20Chai,%20Hong%20Kong&output=embed"
+                        title="Google Maps - HAI DANG IMPORT AND EXPORT LIMITED"
+                        className="w-full h-full border-0"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        allowFullScreen
+                      />
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      <p className="font-medium mb-2">Getting Here:</p>
-                      <ul className="space-y-1">
-                        <li>• MTR: Wan Chai Station (Exit A3) - 2 minutes walk</li>
-                        <li>• Bus: Multiple routes stop at Hennessy Road</li>
-                        <li>• Taxi: Available 24/7 from all major locations</li>
-                        <li>• Parking: Available in nearby commercial buildings</li>
-                      </ul>
+                      <p className="font-medium mb-2">8/F., China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong</p>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=8/F.,%20China%20Hong%20Kong%20Tower,%208-12%20Hennessy%20Road,%20Wan%20Chai,%20Hong%20Kong"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-accent hover:underline cursor-pointer"
+                      >
+                        View on Google Maps
+                      </a>
                     </div>
                   </CardContent>
                 </Card>

@@ -122,7 +122,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-foreground text-center mb-12">Our Journey</h2>
               <div className="space-y-8">
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2020</Badge>
+                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2021</Badge>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">Company Establishment</h3>
                     <p className="text-muted-foreground">
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2021</Badge>
+                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2022</Badge>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">Global Expansion</h3>
                     <p className="text-muted-foreground">
@@ -142,7 +142,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2022</Badge>
+                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2023</Badge>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">Fashion Division Launch</h3>
                     <p className="text-muted-foreground">
@@ -152,7 +152,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2023</Badge>
+                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2024</Badge>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">Digital Innovation</h3>
                     <p className="text-muted-foreground">
@@ -162,7 +162,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2024</Badge>
+                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2025</Badge>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">Continued Growth</h3>
                     <p className="text-muted-foreground">

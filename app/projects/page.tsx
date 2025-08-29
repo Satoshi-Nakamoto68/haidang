@@ -1,3 +1,5 @@
+"use client"
+
 import { TrustBar } from "@/components/trust-bar"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Globe, TrendingUp, Shirt, ExternalLink, Calendar, MapPin } from "lucide-react"
 import Link from "next/link"
+import { useMemo, useState } from "react"
 
 const projects = [
   {
@@ -14,7 +17,8 @@ const projects = [
     category: "Import-Export",
     description:
       "Established comprehensive supply chain network for consumer electronics across 15 countries, reducing costs by 30% and improving delivery times.",
-    image: "/placeholder.svg?key=electronics-supply-chain",
+    // image: "/placeholder.svg?key=electronics-supply-chain",
+    image: "/XXL_height.webp?key=electronics-supply-chain",
     results: ["30% cost reduction", "15 countries served", "50% faster delivery", "$2M+ annual savings"],
     date: "2023",
     location: "Asia-Pacific",
@@ -26,7 +30,7 @@ const projects = [
     category: "Fashion Retail",
     description:
       "Successfully launched and scaled a premium fashion brand from concept to $1M+ annual revenue through strategic sourcing and e-commerce optimization.",
-    image: "/placeholder.svg?key=fashion-brand-launch",
+    image: "/162356-detailp.jpeg?key=fashion-brand-launch",
     results: [
       "$1M+ annual revenue",
       "500% growth in 18 months",
@@ -43,7 +47,7 @@ const projects = [
     category: "Digital Advertising",
     description:
       "Executed comprehensive digital marketing strategy for B2B tech startup, achieving 400% ROI and generating $5M+ in qualified leads.",
-    image: "/placeholder.svg?key=digital-marketing-campaign",
+    image: "/Marketing-Campaign.jpg?key=digital-marketing-campaign",
     results: ["400% ROI achieved", "$5M+ in qualified leads", "250% increase in conversions", "60% reduction in CAC"],
     date: "2023",
     location: "North America",
@@ -55,7 +59,7 @@ const projects = [
     category: "Import-Export",
     description:
       "Developed sustainable textile trading network connecting eco-friendly manufacturers with global fashion brands, promoting ethical sourcing.",
-    image: "/placeholder.svg?key=sustainable-textile-trading",
+    image: "/Textile-Trading.jpg?key=sustainable-textile-trading",
     results: [
       "100% sustainable sourcing",
       "20+ eco-friendly suppliers",
@@ -66,16 +70,28 @@ const projects = [
     location: "Global",
     icon: Globe,
   },
+  // {
+  //   id: 5,
+  //   title: "Luxury Accessories E-commerce",
+  //   category: "Fashion Retail",
+  //   description:
+  //     "Built and optimized luxury accessories e-commerce platform, achieving top-tier conversion rates and customer retention metrics.",
+  //   image: "/placeholder.svg?key=luxury-accessories-ecommerce",
+  //   results: ["8.5% conversion rate", "85% customer retention", "300% revenue growth", "Award-winning UX design"],
+  //   date: "2023",
+  //   location: "Hong Kong & Singapore",
+  //   icon: Shirt,
+  // },
   {
     id: 5,
-    title: "Luxury Accessories E-commerce",
+    title: "Online Fashion Brand Development",
     category: "Fashion Retail",
     description:
-      "Built and optimized luxury accessories e-commerce platform, achieving top-tier conversion rates and customer retention metrics.",
-    image: "/placeholder.svg?key=luxury-accessories-ecommerce",
-    results: ["8.5% conversion rate", "85% customer retention", "300% revenue growth", "Award-winning UX design"],
+      "Built and optimized an e-commerce platform for a fashion brand, focusing on market expansion and sustainable revenue growth.",
+    image: "/Fashion-Brand.webp?key=online-fashion-brand",
+    results: ["8.5% conversion rate", "85% customer return rate", "300% revenue growth", "Conversion-optimized UX/UI design"],
     date: "2023",
-    location: "Hong Kong & Singapore",
+    location: "Southeast Asia Market",
     icon: Shirt,
   },
   {
@@ -84,7 +100,7 @@ const projects = [
     category: "Digital Advertising",
     description:
       "Implemented integrated performance marketing strategy across multiple channels for retail client, maximizing ROAS and market penetration.",
-    image: "/placeholder.svg?key=multi-channel-marketing",
+    image: "/Performance-Marketing.jpg?key=multi-channel-marketing",
     results: ["650% ROAS achieved", "12 marketing channels", "2M+ qualified impressions", "Industry-leading CTR"],
     date: "2023-2024",
     location: "Asia-Pacific",
@@ -92,7 +108,18 @@ const projects = [
   },
 ]
 
+const filters = ["All Projects", "Import-Export", "Fashion Retail", "Digital Advertising"] as const
+
+type FilterType = typeof filters[number]
+
 export default function ProjectsPage() {
+  const [activeFilter, setActiveFilter] = useState<FilterType>("All Projects")
+
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === "All Projects") return projects
+    return projects.filter((p) => p.category === activeFilter)
+  }, [activeFilter])
+
   return (
     <div className="min-h-screen">
       <TrustBar />
@@ -116,12 +143,16 @@ export default function ProjectsPage() {
         <section className="py-8 border-b border-border">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="default" className="bg-accent text-accent-foreground">
-                All Projects
-              </Button>
-              <Button variant="outline">Import-Export</Button>
-              <Button variant="outline">Fashion Retail</Button>
-              <Button variant="outline">Digital Advertising</Button>
+              {filters.map((f) => (
+                <Button
+                  key={f}
+                  variant={activeFilter === f ? "default" : "outline"}
+                  onClick={() => setActiveFilter(f)}
+                  className={`${activeFilter === f ? "bg-accent text-accent-foreground" : ""} cursor-pointer`}
+                >
+                  {f}
+                </Button>
+              ))}
             </div>
           </div>
         </section>
@@ -129,8 +160,11 @@ export default function ProjectsPage() {
         {/* Projects Grid */}
         <section className="py-16">
           <div className="container mx-auto px-4">
+            <div className="mb-6 text-sm text-muted-foreground text-center">
+              Showing {filteredProjects.length} of {projects.length}
+            </div>
             <div className="grid lg:grid-cols-2 gap-8">
-              {projects.map((project) => {
+              {filteredProjects.map((project) => {
                 const IconComponent = project.icon
                 return (
                   <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow">
@@ -179,10 +213,10 @@ export default function ProjectsPage() {
                         </div>
                       </div>
 
-                      <Button variant="outline" className="w-full bg-transparent">
+                      {/* <Button variant="outline" className="w-full bg-transparent">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Case Study
-                      </Button>
+                      </Button> */}
                     </CardContent>
                   </Card>
                 )

@@ -61,9 +61,9 @@ export function Navigation() {
             <Link href="/compliance" className="text-foreground hover:text-accent transition-colors">
               Compliance
             </Link>
-            <Link href="/news" className="text-foreground hover:text-accent transition-colors">
+            {/* <Link href="/news" className="text-foreground hover:text-accent transition-colors">
               News
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </Link>

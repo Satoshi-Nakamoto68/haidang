@@ -13,7 +13,8 @@ export function TrustBar() {
           </span>
           <span className="flex items-center gap-1">
             <span className="w-2 h-2 bg-accent rounded-full"></span>
-            Contact: info@haidangimex.com
+            {/* Contact: info@haidangimex.com */}
+            Contact: xnkbaonhi@gmail.com
           </span>
         </span>
       </div>

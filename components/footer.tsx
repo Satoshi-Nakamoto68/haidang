@@ -21,17 +21,17 @@ export function Footer() {
                   />
                 </div>
               </Link>
-              <p className="mt-2 text-xs text-primary-foreground/80">Registered in Hong Kong · Est. 2020</p>
+              <p className="mt-2 text-xs text-primary-foreground/80">Registered in Hong Kong · Est. 2021</p>
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 text-accent flex-shrink-0" />
                 <span>8/F., China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-accent" />
                 <span>info@haidangimex.com</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-accent" />
                 <span>xnkbaonhi@gmail.com</span>
@@ -85,7 +85,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2024 HAI DANG IMPORT AND EXPORT LIMITED. All rights reserved. Registered in Hong Kong.</p>
+          <p>&copy; 2025 HAI DANG IMPORT AND EXPORT LIMITED. All rights reserved. Registered in Hong Kong.</p>
         </div>
       </div>
     </footer>

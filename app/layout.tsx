@@ -114,7 +114,7 @@ export default function RootLayout({
                 },
               ],
               sameAs: ["https://www.linkedin.com/company/haidangimex", "https://www.facebook.com/haidangimex"],
-              foundingDate: "2020",
+              foundingDate: "2021",
               numberOfEmployees: "50+",
               areaServed: "Worldwide",
               serviceType: ["Import-Export Trading", "Fashion Retail", "Digital Advertising"],

@@ -22,11 +22,23 @@ export default function CompliancePage() {
     purpose: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState<null | { ref: string }>(null)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Verification request submitted:", formData)
+    if (isSubmitting) return
+    setIsSubmitting(true)
+    setSubmitSuccess(null)
+
+    // Simulate async submission
+    setTimeout(() => {
+      const ref = `REF-${Math.random().toString(36).slice(2, 7).toUpperCase()}`
+      console.log("Verification request submitted:", formData, ref)
+      setIsSubmitting(false)
+      setSubmitSuccess({ ref })
+      setFormData({ name: "", email: "", company: "", purpose: "", message: "" })
+    }, 900)
   }
 
   return (
@@ -74,7 +86,7 @@ export default function CompliancePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Incorporation Date</h3>
-                      <p className="text-muted-foreground">2020</p>
+                      <p className="text-muted-foreground">2021</p>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Jurisdiction</h3>
@@ -102,7 +114,8 @@ export default function CompliancePage() {
                       Contact Information
                     </h3>
                     <div className="space-y-1 text-muted-foreground">
-                      <p>Primary: info@haidangimex.com</p>
+                      {/* <p>Primary: info@haidangimex.com</p> */}
+                      <p>Primary: xnkbaonhi@gmail.com</p>
                       <p>Secondary: xnkbaonhi@gmail.com</p>
                     </div>
                   </div>
@@ -155,10 +168,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Official certificate of incorporation issued by the Hong Kong Companies Registry.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
 
@@ -173,10 +182,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Current business registration certificate with Hong Kong authorities.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
 
@@ -191,10 +196,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Official documentation confirming registered business address.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
 
@@ -209,10 +210,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Audited financial statements and annual returns as required.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
 
@@ -227,10 +224,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Import-export licenses and trade permits for international operations.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
 
@@ -245,10 +238,6 @@ export default function CompliancePage() {
                     <p className="text-muted-foreground mb-4">
                       Professional indemnity and public liability insurance documentation.
                     </p>
-                    <Button variant="outline" className="w-full bg-transparent" disabled>
-                      <Download className="w-4 h-4 mr-2" />
-                      Available on Request
-                    </Button>
                   </CardContent>
                 </Card>
               </div>
@@ -284,7 +273,20 @@ export default function CompliancePage() {
                   </p>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Inline Success Banner */}
+                  {submitSuccess && (
+                    <div className="mb-6 rounded-lg border border-green-600/30 bg-green-600/10 p-4">
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
+                        <div className="text-sm">
+                          <p className="font-medium text-green-700">Request submitted successfully</p>
+                          <p className="text-green-700/80">Reference: <span className="font-mono">{submitSuccess.ref}</span>. Our compliance team will reach out within 2-3 business days.</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <form onSubmit={handleSubmit} className="space-y-6" aria-live="polite">
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="name">Full Name *</Label>
@@ -347,8 +349,8 @@ export default function CompliancePage() {
                       />
                     </div>
 
-                    <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                      Submit Verification Request
+                    <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 cursor-pointer" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Submit Verification Request"}
                     </Button>
                   </form>
 
