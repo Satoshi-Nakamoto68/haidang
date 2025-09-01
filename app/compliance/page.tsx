@@ -86,7 +86,7 @@ export default function CompliancePage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Incorporation Date</h3>
-                      <p className="text-muted-foreground">2021</p>
+                      <p className="text-muted-foreground">2023</p>
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Jurisdiction</h3>
@@ -114,8 +114,7 @@ export default function CompliancePage() {
                       Contact Information
                     </h3>
                     <div className="space-y-1 text-muted-foreground">
-                      {/* <p>Primary: info@haidangimex.com</p> */}
-                      <p>Primary: xnkbaonhi@gmail.com</p>
+                      <p>Primary: info@haidangimex.com</p>
                       <p>Secondary: xnkbaonhi@gmail.com</p>
                     </div>
                   </div>

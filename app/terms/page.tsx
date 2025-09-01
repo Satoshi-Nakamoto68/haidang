@@ -99,8 +99,8 @@ export default function TermsPage() {
                   <CardContent className="text-sm text-muted-foreground space-y-1">
                     <div className="flex items-center gap-2"><Building2 className="w-4 h-4 text-accent" /> HAI DANG IMPORT AND EXPORT LIMITED</div>
                     <p>8/F., China Hong Kong Tower<br/>8-12 Hennessy Road<br/>Wan Chai, Hong Kong</p>
-                    {/* <p>Primary: <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a></p> */}
-                    <p>Primary: <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a></p>
+                    <p>Primary: <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a></p>
+                    {/* <p>Primary: <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a></p> */}
                   </CardContent>
                 </Card>
               </div>
@@ -197,8 +197,8 @@ export default function TermsPage() {
                     <CardTitle className="flex items-center gap-2"><Mail className="w-5 h-5 text-accent" /> Contact</CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm text-muted-foreground space-y-3">
-                    {/* <p>Questions about these Terms? Email us at <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a>.</p> */}
-                    <p>Questions about these Terms? Email us at <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a>.</p>
+                    <p>Questions about these Terms? Email us at <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a>.</p>
+                    {/* <p>Questions about these Terms? Email us at <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a>.</p> */}
                     <div className="flex gap-3">
                       <Button asChild variant="outline"><Link href="/privacy">Privacy Policy</Link></Button>
                       <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90"><Link href="/compliance">Compliance</Link></Button>

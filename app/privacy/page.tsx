@@ -103,8 +103,8 @@ export default function PrivacyPage() {
                   <CardContent className="text-sm text-muted-foreground space-y-1">
                     <div className="flex items-center gap-2"><Building2 className="w-4 h-4 text-accent" /> HAI DANG IMPORT AND EXPORT LIMITED</div>
                     <p>8/F., China Hong Kong Tower<br/>8-12 Hennessy Road<br/>Wan Chai, Hong Kong</p>
-                    {/* <p>Primary: <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a></p> */}
-                    <p>Primary: <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a></p>
+                    <p>Primary: <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a></p>
+                    {/* <p>Primary: <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a></p> */}
                   </CardContent>
                 </Card>
               </div>
@@ -183,25 +183,25 @@ export default function PrivacyPage() {
                   <CardContent className="text-sm text-muted-foreground">
                     <Accordion type="single" collapsible className="w-full">
                       <AccordionItem value="access">
-                        <AccordionTrigger>Access & Correction</AccordionTrigger>
+                        <AccordionTrigger className="cursor-pointer">Access & Correction</AccordionTrigger>
                         <AccordionContent>
                           Request a copy of your data and ask us to correct inaccuracies.
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="erasure">
-                        <AccordionTrigger>Deletion</AccordionTrigger>
+                        <AccordionTrigger className="cursor-pointer">Deletion</AccordionTrigger>
                         <AccordionContent>
                           Ask us to delete your personal data, subject to legal obligations.
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="restrict">
-                        <AccordionTrigger>Restriction & Objection</AccordionTrigger>
+                        <AccordionTrigger className="cursor-pointer">Restriction & Objection</AccordionTrigger>
                         <AccordionContent>
                           Object to or restrict processing in certain circumstances.
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="portability">
-                        <AccordionTrigger>Data Portability</AccordionTrigger>
+                        <AccordionTrigger className="cursor-pointer">Data Portability</AccordionTrigger>
                         <AccordionContent>
                           Obtain your data in a portable format where applicable.
                         </AccordionContent>
@@ -243,8 +243,8 @@ export default function PrivacyPage() {
                     <CardTitle className="flex items-center gap-2"><Mail className="w-5 h-5 text-accent" /> Contact</CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm text-muted-foreground space-y-3">
-                    {/* <p>Questions about this policy? Reach our privacy team at <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a>.</p> */}
-                    <p>Questions about this policy? Reach our privacy team at <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a>.</p>
+                    <p>Questions about this policy? Reach our privacy team at <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">info@haidangimex.com</a>.</p>
+                    {/* <p>Questions about this policy? Reach our privacy team at <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">xnkbaonhi@gmail.com</a>.</p> */}
                     <div className="flex gap-3">
                       <Button asChild variant="outline"><Link href="/compliance">Compliance & Verification</Link></Button>
                       <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90"><Link href="/contact">Contact Us</Link></Button>

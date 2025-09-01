@@ -122,53 +122,89 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-foreground text-center mb-12">Our Journey</h2>
               <div className="space-y-8">
                 <div className="flex gap-6 items-start">
-                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2021</Badge>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Company Establishment</h3>
-                    <p className="text-muted-foreground">
-                      HAI DANG IMPORT AND EXPORT LIMITED was officially registered in Hong Kong, establishing our
-                      headquarters in Wan Chai's prestigious business district.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6 items-start">
-                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2022</Badge>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Global Expansion</h3>
-                    <p className="text-muted-foreground">
-                      Expanded operations to serve clients across Asia-Pacific, establishing key partnerships and supply
-                      chain networks in major trading hubs.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6 items-start">
                   <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2023</Badge>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Fashion Division Launch</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Company Foundation</h3>
+                    <p className="text-muted-foreground">
+                      HAI DANG IMPORT AND EXPORT LIMITED was officially incorporated in Hong Kong, establishing our
+                      headquarters in Wan Chai's prestigious business district. We began with a vision to bridge global
+                      markets through reliable trade partnerships and exceptional service quality.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-6 items-start">
+                  <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2023</Badge>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Core Business Launch</h3>
+                    <p className="text-muted-foreground">
+                      Successfully launched our import-export operations, leveraging Hong Kong's strategic position as
+                      a global trade hub. Established key partnerships with suppliers and logistics providers across
+                      Asia-Pacific markets.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-6 items-start">
+                  <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2024</Badge>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Fashion Retail Expansion</h3>
                     <p className="text-muted-foreground">
                       Launched our premium fashion retail division, curating high-quality collections from international
-                      designers and manufacturers.
+                      designers and manufacturers. Established our online store with a focus on quality, style, and
+                      customer satisfaction.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <Badge className="bg-primary text-primary-foreground min-w-16 text-center">2024</Badge>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Digital Innovation</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Digital Services Launch</h3>
                     <p className="text-muted-foreground">
                       Introduced comprehensive digital advertising services, helping businesses achieve measurable
-                      growth through data-driven marketing strategies.
+                      growth through data-driven marketing strategies. Built a team of digital marketing experts
+                      specializing in SEM, social media, and performance marketing.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <Badge className="bg-accent text-accent-foreground min-w-16 text-center">2025</Badge>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Continued Growth</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Strategic Growth & Innovation</h3>
                     <p className="text-muted-foreground">
-                      Achieved significant milestones in all business divisions while maintaining our commitment to
-                      excellence, transparency, and customer satisfaction.
+                      Achieved significant milestones across all business divisions while maintaining our commitment to
+                      excellence, transparency, and customer satisfaction. Expanded our global reach to serve clients
+                      across 25+ countries with enhanced digital capabilities and streamlined operations.
                     </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Key Achievements */}
+              <div className="mt-12 p-6 bg-muted rounded-lg">
+                <h3 className="text-xl font-semibold text-foreground text-center mb-6">Key Achievements</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Successfully registered with Hong Kong Companies Registry</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Established partnerships with 50+ suppliers worldwide</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Launched comprehensive online fashion store</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Developed full-service digital marketing capabilities</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Maintained 99.8% on-time delivery rate</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Built trusted relationships with 25+ countries</span>
                   </div>
                 </div>
               </div>

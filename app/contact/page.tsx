@@ -85,9 +85,9 @@ export default function ContactPage() {
                   <div className="text-muted-foreground space-y-2">
                     <div>
                       <p className="font-medium">General Inquiries</p>
-                      <a href="mailto:xnkbaonhi@gmail.com" className="text-accent hover:underline">
-                        {/* info@haidangimex.com */}
-                        xnkbaonhi@gmail.com
+                      <a href="mailto:info@haidangimex.com" className="text-accent hover:underline">
+                        info@haidangimex.com
+                        {/* xnkbaonhi@gmail.com */}
                       </a>
                     </div>
                     <div>
