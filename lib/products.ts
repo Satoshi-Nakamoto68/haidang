@@ -637,6 +637,264 @@ export const products: Product[] = [
     isNew: true,
   },
   {
+    id: "81",
+    name: "Men's Casual Short Sleeve Linen Shirt",
+    images: [
+      "/men/811.jpg",
+      "/men/812.jpg",
+      "/men/813.jpg",
+      "/men/814.jpg",
+      "/men/815.jpg",
+      "/men/816.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Lightweight short sleeve shirt made with breathable linen fabric. Ideal for casual outings and summer wear.",
+    features: [
+      "70% Linen, 30% Cotton",
+      "Short sleeve design",
+      "Button closure",
+      "Regular fit",
+      "Hand wash recommended"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "82",
+    name: "Men's Classic Crew Neck T-Shirt",
+    images: [
+      "/men/821.jpg",
+      "/men/822.jpg",
+      "/men/823.jpg",
+      "/men/824.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Soft cotton crew neck t-shirt designed for everyday wear. A versatile basic piece for any wardrobe.",
+    features: [
+      "100% Cotton",
+      "Crew neck style",
+      "Short sleeves",
+      "Breathable fabric",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "83",
+    name: "Men's Slim Fit Stretch Chino Pants",
+    images: [
+      "/men/831.jpg",
+      "/men/832.jpg",
+      "/men/833.jpg",
+      "/men/834.jpg",
+      "/men/835.jpg",
+      "/men/836.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Versatile chino pants made with stretch cotton for comfort. Suitable for office, casual, and semi-formal wear.",
+    features: [
+      "98% Cotton, 2% Spandex",
+      "Slim fit cut",
+      "Zipper fly with button closure",
+      "Two front and two back pockets",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.5,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "84",
+    name: "Men's Lightweight Zip-Up Hoodie",
+    images: [
+      "/men/841.jpg",
+      "/men/842.jpg",
+      "/men/843.jpg",
+      "/men/844.jpg",
+      "/men/845.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Comfortable and lightweight hoodie with full zip closure. Ideal for layering in cooler weather.",
+    features: [
+      "60% Cotton, 40% Polyester",
+      "Zip-up closure",
+      "Adjustable hood",
+      "Kangaroo pockets",
+      "Machine washable"
+    ],
+    sizes: ["M", "L", "XL", "XXL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "85",
+    name: "Men's Classic Polo Shirt",
+    images: [
+      "/men/851.jpg",
+      "/men/852.jpg",
+      "/men/853.jpg",
+      "/men/854.jpg",
+      "/men/855.jpg",
+      "/men/856.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Short sleeve polo shirt with soft cotton fabric and button placket. A timeless wardrobe staple.",
+    features: [
+      "95% Cotton, 5% Spandex",
+      "Polo collar",
+      "Three-button placket",
+      "Breathable and soft",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL"],
+    rating: 4.8,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "86",
+    name: "Men's Relaxed Fit Cargo Shorts",
+    images: [
+      "/men/861.jpg",
+      "/men/862.jpg",
+      "/men/863.jpg",
+      "/men/864.jpg",
+      "/men/865.jpg",
+      "/men/866.jpg",
+      "/men/867.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Durable cotton cargo shorts with multiple pockets for utility and comfort. Great for outdoor activities.",
+    features: [
+      "100% Cotton",
+      "Relaxed fit",
+      "Button and zipper closure",
+      "Multiple utility pockets",
+      "Machine washable"
+    ],
+    sizes: ["M", "L", "XL", "XXL"],
+    rating: 4.5,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "87",
+    name: "Men's Lightweight Puffer Jacket",
+    images: [
+      "/men/871.jpg",
+      "/men/872.jpg",
+      "/men/873.jpg",
+      "/men/874.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Warm yet lightweight puffer jacket, designed with water-resistant fabric and insulated filling.",
+    features: [
+      "100% Nylon shell",
+      "Polyester filling",
+      "Front zipper closure",
+      "Two side pockets",
+      "Hand wash recommended"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "88",
+    name: "Men's V-Neck Knitted Sweater",
+    images: [
+      "/men/881.jpg",
+      "/men/882.jpg",
+      "/men/883.jpg",
+      "/men/884.jpg",
+      "/men/885.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Classic V-neck sweater made with soft knit fabric, perfect for layering over shirts or wearing alone.",
+    features: [
+      "55% Cotton, 45% Acrylic",
+      "V-neck design",
+      "Long sleeves",
+      "Ribbed cuffs and hem",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "89",
+    name: "Men's Classic Denim Jacket",
+    images: [
+      "/men/891.jpg",
+      "/men/892.jpg",
+      "/men/893.jpg",
+      "/men/894.jpg",
+      "/men/895.jpg",
+      "/men/896.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Timeless denim jacket with button-front closure and chest pockets. Durable and stylish for everyday wear.",
+    features: [
+      "100% Cotton denim",
+      "Button closure",
+      "Two chest pockets",
+      "Classic fit",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "90",
+    name: "Men's Knit Cardigan with Shawl Collar",
+    images: [
+      "/men/901.jpg",
+      "/men/902.jpg",
+      "/men/903.jpg",
+      "/men/904.jpg",
+      "/men/905.jpg",
+    ],
+    category: "Men's Fashion",
+    description:
+      "Stylish knit cardigan with a shawl collar and button closure. Great for layering in cold weather.",
+    features: [
+      "65% Acrylic, 35% Cotton",
+      "Shawl collar design",
+      "Button closure",
+      "Two front pockets",
+      "Machine washable"
+    ],
+    sizes: ["M", "L", "XL", "XXL"],
+    rating: 4.8,
+    inStock: true,
+    isNew: true,
+  },
+
+
+
+  //women
+  {
     id: "26",
     name: "Womens Fashion Tops Hoodies Pullover Oversized Sweatshirts",
     images: [
@@ -1265,6 +1523,259 @@ export const products: Product[] = [
     inStock: true,
     isNew: true,
   },
+  {
+    id: "91",
+    name: "Women's Casual Linen Blend Blouse",
+    images: [
+      "/woman/911.jpg",
+      "/woman/912.jpg",
+      "/woman/913.jpg",
+      "/woman/914.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Lightweight linen blend blouse with short sleeves and a relaxed fit. Perfect for daily wear during warm seasons.",
+    features: [
+      "55% Linen, 45% Cotton",
+      "Short sleeves",
+      "Button closure",
+      "Breathable fabric",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "92",
+    name: "Women's Classic Crew Neck T-Shirt",
+    images: [
+      "/woman/921.jpg",
+      "/woman/922.jpg",
+      "/woman/923.jpg",
+      "/woman/924.jpg",
+      "/woman/925.jpg",
+      "/woman/926.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Soft cotton crew neck tee designed for casual and versatile styling. A timeless wardrobe essential.",
+    features: [
+      "100% Cotton",
+      "Short sleeves",
+      "Crew neck",
+      "Soft and breathable",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "93",
+    name: "Women's High-Waist Stretch Skinny Jeans",
+    images: [
+      "/woman/931.jpg",
+      "/woman/932.jpg",
+      "/woman/933.jpg",
+      "/woman/934.jpg",
+      "/woman/935.jpg",
+      "/woman/936.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Stylish high-waist skinny jeans with stretch fabric for comfort and flattering fit.",
+    features: [
+      "70% Cotton, 25% Polyester, 5% Spandex",
+      "High-rise waist",
+      "Skinny fit",
+      "Zipper and button closure",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    rating: 4.8,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "94",
+    name: "Women's Summer Floral Midi Dress",
+    images: [
+      "/woman/941.jpg",
+      "/woman/942.jpg",
+      "/woman/943.jpg",
+      "/woman/945.jpg",
+      "/woman/946.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Elegant floral midi dress with lightweight fabric and flowing silhouette. Ideal for parties and outdoor events.",
+    features: [
+      "95% Polyester, 5% Spandex",
+      "V-neckline",
+      "Midi length",
+      "Short sleeves",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "95",
+    name: "Women's Knitted Open-Front Cardigan",
+    images: [
+      "/woman/951.jpg",
+      "/woman/952.jpg",
+      "/woman/953.jpg",
+      "/woman/954.jpg",
+      "/woman/955.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Cozy open-front cardigan made with soft knit fabric. Great for layering over casual outfits.",
+    features: [
+      "60% Acrylic, 40% Cotton",
+      "Open front design",
+      "Long sleeves",
+      "Ribbed hem and cuffs",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "96",
+    name: "Women's Relaxed Fit Wide-Leg Pants",
+    images: [
+      "/woman/961.jpg",
+      "/woman/962.jpg",
+      "/woman/963.jpg",
+      "/woman/964.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Comfortable wide-leg pants with elastic waistband. Perfect for casual outings and office wear.",
+    features: [
+      "65% Polyester, 30% Rayon, 5% Spandex",
+      "Elastic waistband",
+      "Wide-leg design",
+      "Breathable fabric",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    rating: 4.5,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "97",
+    name: "Women's Lightweight Denim Jacket",
+    images: [
+      "/woman/971.jpg",
+      "/woman/972.jpg",
+      "/woman/973.jpg",
+      "/woman/974.jpg",
+      "/woman/975.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Classic lightweight denim jacket with button closure. A versatile layer for casual wear.",
+    features: [
+      "100% Cotton denim",
+      "Button closure",
+      "Two chest pockets",
+      "Classic fit",
+      "Machine washable"
+    ],
+    sizes: ["S", "M", "L", "XL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: "98",
+    name: "Women's Long Sleeve V-Neck Blouse",
+    images: [
+      "/woman/981.jpg",
+      "/woman/982.jpg",
+      "/woman/983.jpg",
+      "/woman/984.jpg",
+      "/woman/985.jpg",
+      "/woman/986.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Elegant V-neck blouse with long sleeves and lightweight material. Suitable for work or evening outings.",
+    features: [
+      "100% Polyester",
+      "Long sleeves",
+      "V-neck",
+      "Loose fit",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    rating: 4.6,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "99",
+    name: "Women's Ribbed Tank Top",
+    images: [
+      "/woman/991.jpg",
+      "/woman/992.jpg",
+      "/woman/993.jpg",
+      "/woman/994.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Soft ribbed tank top with a slim fit design. A perfect layering piece for any season.",
+    features: [
+      "95% Cotton, 5% Spandex",
+      "Sleeveless",
+      "Round neckline",
+      "Slim fit",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    rating: 4.8,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "100",
+    name: "Women's Casual Maxi Skirt with Pockets",
+    images: [
+      "/woman/1001.jpg",
+      "/woman/1002.jpg",
+      "/woman/1003.jpg",
+      "/woman/1004.jpg",
+      "/woman/1005.jpg",
+      "/woman/1006.jpg",
+      "/woman/1007.jpg",
+    ],
+    category: "Women's Fashion",
+    description:
+      "Flowy maxi skirt with side pockets and elastic waistband. Stylish and comfortable for daily wear.",
+    features: [
+      "65% Polyester, 35% Rayon",
+      "Elastic waistband",
+      "Maxi length",
+      "Side pockets",
+      "Machine washable"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    rating: 4.7,
+    inStock: true,
+    isNew: true,
+  },
+
     {
       id: "51",
       name: "Men's Belt, Reversible Belt Adjustable For Gift Men 1.25”",
@@ -1897,7 +2408,269 @@ export const products: Product[] = [
       rating: 4.8,
       inStock: true,
       isNew: true
+    },
+    {
+      id: "101",
+      name: "Unisex Classic Leather Belt with Metal Buckle",
+      images: [
+        "/accessories/1011.jpg",
+        "/accessories/1012.jpg",
+        "/accessories/1013.jpg",
+        "/accessories/1014.jpg",
+        "/accessories/1015.jpg",
+        "/accessories/1016.jpg"
+      ],
+      category: "Accessories",
+      description: "Durable leather belt with a sleek metal buckle. Perfect for casual or office wear.",
+      features: [
+        "100% Genuine Leather",
+        "Metal buckle",
+        "Adjustable fit",
+        "Imported"
+      ],
+      sizes: ["S", "M", "L", "XL"],
+      rating: 4.7,
+      inStock: true,
+      isNew: true
+    },
+    {
+      id: "102",
+      name: "Women's Lightweight Summer Scarf",
+      images: [
+        "/accessories/1021.jpg",
+        "/accessories/1022.jpg",
+        "/accessories/1023.jpg",
+        "/accessories/1024.jpg",
+        "/accessories/1025.jpg",
+        "/accessories/1026.jpg"
+      ],
+      category: "Accessories",
+      description: "Soft lightweight scarf with breathable fabric, ideal for summer outfits and layering.",
+      features: [
+        "70% Viscose, 30% Cotton",
+        "Lightweight and breathable",
+        "Hand wash recommended",
+        "Imported"
+      ],
+      sizes: ["One Size"],
+      rating: 4.6,
+      inStock: true,
+      isNew: true
+    },
+    {
+      id: "103",
+      name: "Men's Classic Knitted Beanie Hat",
+      images: [
+        "/accessories/1031.jpg",
+        "/accessories/1032.jpg",
+        "/accessories/1033.jpg",
+        "/accessories/1034.jpg",
+        "/accessories/1035.jpg",
+        "/accessories/1036.jpg",
+        "/accessories/1037.jpg"
+      ],
+      category: "Accessories",
+      description: "Warm knitted beanie hat designed for comfort and casual style during colder months.",
+      features: [
+        "100% Acrylic",
+        "Stretchable fabric",
+        "Hand wash only",
+        "Imported"
+      ],
+      sizes: ["One Size"],
+      rating: 4.8,
+      inStock: true,
+      isNew: false
+    },
+    {
+      id: "104",
+      name: "Women's Everyday Tote Bag with Inner Pocket",
+      images: [
+        "/accessories/1041.jpg",
+        "/accessories/1042.jpg",
+        "/accessories/1043.jpg",
+        "/accessories/1044.jpg",
+        "/accessories/1045.jpg"
+      ],
+      category: "Accessories",
+      description: "Spacious tote bag with inner pocket for organizing essentials. Great for work or shopping.",
+      features: [
+        "Durable polyester fabric",
+        "Zipper closure",
+        "One large compartment with pocket",
+        "Easy to clean"
+      ],
+      sizes: ["One Size"],
+      rating: 4.7,
+      inStock: true,
+      isNew: true
+    },
+    {
+      id: "105",
+      name: "Unisex Cotton Baseball Cap",
+      images: [
+        "/accessories/1051.jpg",
+        "/accessories/1052.jpg",
+        "/accessories/1053.jpg",
+        "/accessories/1054.jpg",
+        "/accessories/1055.jpg",
+        "/accessories/1056.jpg"
+      ],
+      category: "Accessories",
+      description: "Classic cotton baseball cap with adjustable strap. Perfect for casual wear and outdoor activities.",
+      features: [
+        "100% Cotton",
+        "Adjustable strap closure",
+        "Breathable design",
+        "Machine washable"
+      ],
+      sizes: ["One Size"],
+      rating: 4.6,
+      inStock: true,
+      isNew: false
+    },
+    {
+      id: "106",
+      name: "Women's Elegant Pearl Drop Earrings",
+      images: [
+        "/accessories/1061.jpg",
+        "/accessories/1062.jpg",
+        "/accessories/1063.jpg",
+        "/accessories/1064.jpg",
+        "/accessories/1065.jpg",
+        "/accessories/1066.jpg"
+      ],
+      category: "Accessories",
+      description: "Classic pearl drop earrings that add elegance to both casual and formal outfits.",
+      features: [
+        "Material: Alloy + Pearl",
+        "Lightweight design",
+        "Hook closure",
+        "Imported"
+      ],
+      sizes: ["One Size"],
+      rating: 4.9,
+      inStock: true,
+      isNew: true
+    },
+    {
+      id: "107",
+      name: "Men's Slim Leather Wallet with Card Slots",
+      images: [
+        "/accessories/1071.jpg",
+        "/accessories/1072.jpg",
+        "/accessories/1073.jpg",
+        "/accessories/1074.jpg",
+        "/accessories/1075.jpg"
+      ],
+      category: "Accessories",
+      description: "Compact slim wallet made from durable leather with multiple card slots and cash pocket.",
+      features: [
+        "100% Leather",
+        "6 card slots + cash compartment",
+        "Minimalist slim design",
+        "Imported"
+      ],
+      sizes: ["One Size"],
+      rating: 4.8,
+      inStock: true,
+      isNew: false
+    },
+    // {
+    //   id: "108",
+    //   name: "Women's Fashion Sunglasses with UV Protection",
+    //   images: [
+    //     "/accessories/1081.jpg",
+    //     "/accessories/1082.jpg",
+    //     "/accessories/1083.jpg"
+    //   ],
+    //   category: "Accessories",
+    //   description: "Trendy sunglasses with UV400 protection to shield your eyes while keeping you stylish.",
+    //   features: [
+    //     "UV400 protection lenses",
+    //     "Lightweight frame",
+    //     "Scratch resistant",
+    //     "Imported"
+    //   ],
+    //   sizes: ["One Size"],
+    //   rating: 4.7,
+    //   inStock: true,
+    //   isNew: true
+    // },
+    {
+      id: "108",
+      name: "Unisex Cotton Bucket Hat for Outdoor Activities",
+      images: [
+        "/accessories/1081.jpg",
+        "/accessories/1082.jpg",
+        "/accessories/1083.jpg",
+        "/accessories/1084.jpg",
+        "/accessories/1085.jpg",
+        "/accessories/1086.jpg"
+      ],
+      category: "Accessories",
+      description: "Casual bucket hat made from breathable cotton, ideal for outdoor activities, travel, and daily wear.",
+      features: [
+        "100% Cotton",
+        "Lightweight and breathable",
+        "Foldable design for easy carrying",
+        "Machine washable"
+      ],
+      sizes: ["One Size"],
+      rating: 4.7,
+      inStock: true,
+      isNew: true
+    },
+    
+    {
+      id: "109",
+      name: "Unisex Cozy Winter Knit Gloves",
+      images: [
+        "/accessories/1091.jpg",
+        "/accessories/1092.jpg",
+        "/accessories/1093.jpg",
+        "/accessories/1094.jpg",
+        "/accessories/1095.jpg",
+        "/accessories/1096.jpg",
+        "/accessories/1097.jpg"
+      ],
+      category: "Accessories",
+      description: "Soft knit gloves designed to keep your hands warm during cold weather.",
+      features: [
+        "95% Acrylic, 5% Spandex",
+        "Stretchable fit",
+        "Hand wash only",
+        "Imported"
+      ],
+      sizes: ["M", "L"],
+      rating: 4.6,
+      inStock: true,
+      isNew: true
+    },
+    {
+      id: "110",
+      name: "Women's Adjustable Waist Belt with Decorative Buckle",
+      images: [
+        "/accessories/1101.jpg",
+        "/accessories/1102.jpg",
+        "/accessories/1103.jpg",
+        "/accessories/1104.jpg",
+        "/accessories/1105.jpg"
+      ],
+      category: "Accessories",
+      description: "Stylish waist belt with a decorative buckle, perfect for dresses and tunics.",
+      features: [
+        "Faux leather material",
+        "Adjustable fit",
+        "Decorative metal buckle",
+        "Imported"
+      ],
+      sizes: ["S", "M", "L"],
+      rating: 4.8,
+      inStock: true,
+      isNew: true
     }
+    
 ]
 
 export function getProductById(id: string): Product | undefined {
