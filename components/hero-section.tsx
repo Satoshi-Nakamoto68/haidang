@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Globe, Shirt, TrendingUp } from "lucide-react"
+import { ArrowRight, Globe, Shirt, TrendingUp, Shield, Network, Smartphone, Server } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -15,15 +15,17 @@ export function HeroSection() {
             <span className="text-accent">Fashion Retail</span>
             <span className="text-muted-foreground mx-4">•</span>
             <span className="text-primary">Digital Growth</span>
+            <span className="text-muted-foreground mx-4">•</span>
+            <span className="text-accent">IT Solutions</span>
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty animate-fade-in">
             HAI DANG IMPORT AND EXPORT LIMITED - Your trusted partner for international trade, premium fashion retail,
-            and innovative digital advertising solutions.
+            innovative digital advertising solutions, and comprehensive IT & telecom services.
           </p>
 
-          {/* Three pillars showcase */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {/* Four pillars showcase */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 animate-scale-in group">
               <Globe className="w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Import-Export</h3>
@@ -47,6 +49,17 @@ export function HeroSection() {
                 Performance marketing and digital growth strategies
               </p>
             </div>
+
+            <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 animate-scale-in group">
+              <div className="relative mb-4">
+                <Shield className="w-12 h-12 text-accent group-hover:scale-110 transition-transform" />
+                <Network className="w-6 h-6 text-primary absolute -bottom-1 -right-1 group-hover:scale-110 transition-transform" />
+              </div>
+              <h3 className="text-lg font-semibold text-card-foreground mb-2">IT & Telecom</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Security, network infrastructure, and telecommunications solutions
+              </p>
+            </div>
           </div>
 
           {/* CTAs */}
@@ -60,6 +73,12 @@ export function HeroSection() {
             <Button asChild variant="outline" size="lg" className="btn-hover bg-transparent">
               <Link href="/services/import-export" className="flex items-center gap-2">
                 Explore Services
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="btn-hover bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Link href="/contact" className="flex items-center gap-2">
+                IT Solutions
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
