@@ -38,7 +38,7 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
       <h1 className="text-6xl md:text-8xl font-extrabold mb-4">404</h1>
       <p className="text-xl md:text-2xl opacity-80 mb-6">
-        Website not found
+        Website not found hahah
       </p>
       <button className="px-6 py-3 rounded-xl bg-white text-black font-semibold hover:scale-105 transition">
         Go Home
